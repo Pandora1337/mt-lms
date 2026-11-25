@@ -21,7 +21,7 @@ This is a showcase of a Learning Management System I build on Blazor Server for 
 
 - The website is machine translated to english, as it was built for a non-english speaking company.
 
-<summary>Table of Contents:</summary>
+**Table of Contents**:
 <ol>
   <li><a href="https://github.com/Pandora1337/mt-lms/wiki/1.-Login">Explore the Website!</a></li>
   <li><a href="#features">Features</a></li>
