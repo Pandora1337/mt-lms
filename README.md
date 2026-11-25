@@ -14,7 +14,7 @@ This is a showcase of a Learning Management System I build on Blazor Server for 
 * **Timeline:** September - November 2026 (6 Weeks)
 * **Status:** Complete
 
-## [Explore the website!]()
+## [Explore the website!](https://github.com/Pandora1337/mt-lms/wiki/1.-Login)
 
 **Note**:
 - The source code for this project is proprietary and confidential. This repository serves as a portfolio case study highlighting the architecture, design, and feature set.
@@ -23,7 +23,7 @@ This is a showcase of a Learning Management System I build on Blazor Server for 
 
 <summary>Table of Contents:</summary>
 <ol>
-  <li><a href="">Explore the Website!</a></li>
+  <li><a href="https://github.com/Pandora1337/mt-lms/wiki/1.-Login">Explore the Website!</a></li>
   <li><a href="#features">Features</a></li>
   <li><a href="#tools-and-stack">Tools & Stack</a></li>
   <li>
