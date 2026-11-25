@@ -42,12 +42,15 @@ This is a showcase of a Learning Management System I build on Blazor Server for 
 ---
 
 ### Features
-- **Authentication and Authorization** - Using AspNetCore.Identity with additional custom fields
+- **Role-Based Access Control (RBAC)** - Using `ASP.NET Core Identity` with custom user profiles
 - **User Roles**:
   - **User** - Has access to view Courses, Tests, and Additional Materials
-  - **Manager** - Can create and edit Users and gets access to Manager-only Courses and Tests.
-  - **Admin** - Can create and edit Courses, Tests, and Additional Materials. Can also change user roles.
+  - **Manager** - Can create and edit their respective Users, and gets access to Manager-only Courses and Tests.
+  - **Admin** - Can create and edit Courses, Tests, and Additional Materials. Can also edit all users and change their roles.
 - **Real Time Interactivity** - Shows Thumbnail Previews for Courses, Generates Markdown Preview for lessons editing, and real time quiz taking
+- **Automated Tests Grading** - Automatically grades Tests on their completion, and saves the results for Manager review
+- **Progress Tracking** - Unseen Lessons are marked for the user, and each Manager sees their respective users' Test progression
+- **Course Sorting** - Find the most important, most recent, or any unseen courses!
 - **Mobile friendly** - All UI adapts dynamically to a phone or tablet screen
 
 ---
