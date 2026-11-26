@@ -8,7 +8,7 @@
 </div>
 
 # MT-LMS
-This is a showcase of a Learning Management System I build on Blazor Server for internal use of a small company.
+This is a showcase of a Learning Management System (LMS) I build on Blazor Server for internal use of a small company.
 
 * **Role:** Fullstack Developer
 * **Timeline:** September - November 2026 (6 Weeks)
@@ -91,10 +91,32 @@ Since interactivity requires a dedicated stateful circuit on the server for each
 
 ### Key Architectural Patterns
 
-To avoid massive, unmaintainable razor files, UI elements are broken down into two distinct categories:
-- Container Components (Pages): Routable components (`@page "/orders"`) that inject application services/mediators, coordinate data fetching, handle lifecycle triggers, and manage overall page state.
+Project Structure
+```
+.deploy/                     # Ansible Playbooks, Env configs, docker-compose.yml
+.vscode/                     # VSCode tasks and launch options
+wwwroot/                     # Static web assets and style sheets
+Services/                    # Scoped and Global handlers of logic and data
+Models/                      # Generic Models and Interfaces
+└── <Feature Models>         # Feature-specific Models and DTOs
+Data/                        # DB Migrations, App DB Context, Class Extensions
+Components/                  # All .razor
+├── <Feature Components>/    # Feature-sliced pages and localized components
+│   └── <Feature>Endpoint.cs # API endpoint for the feature calls from SSR pages
+├── <Shared Components>/     # Reusable generic UI components
+├── Account/                 # Authentication wrappers for Identity
+├── Layout/                  # MainLayout, NavMenu
+├── Pages/                   # Main routable pages
+└── App.razor                # Router configuration & cascading security
+Program.cs                   # Composition root and DI configuration
+```
 
-- Presentation Components ("Dumb"): Reusable visual elements that accept parameters (`[Parameter]`) and throw events (`[Parameter] EventCallback`). They contain no direct data-access code.
+To avoid massive, unmaintainable razor files, UI elements are broken down into 3 distinct categories:
+- Container Components (Pages): Routable components (`@page "/orders"`) that inject application services/mediators, coordinate data fetching, handle lifecycle triggers, and manage overall page state. The "Root" of a feature.
+
+- Presentation Components ("Components"): Reusable visual elements that accept parameters (`[Parameter]`) and throw events (`[Parameter] EventCallback`). They contain no direct data-access code.
+
+- Localised Pages (Routable Components): Scoped pages to a specific feature. Stored in feature directories due to thematic relevance. Are Never the "Root" of a feature.
 
 State is managed in 2 distinct scopes:
 1. Component State: Local variables inside a single .razor file for UI-only toggles.
@@ -105,7 +127,7 @@ State is managed in 2 distinct scopes:
 
 Extensive documentation was written for each service, architectural decisions during implementation, and how they interact with each other.
 
-I also wrote a separate guidebooks with step-by-step explanations and commands for seting up a new host, deploying the application stack, migration procedure, and database backup/restoration procedure
+I also wrote separate guidebooks with step-by-step explanations and commands for seting up a new host, deploying the application stack, migration procedure, and database backup/restoration procedure
 
 ## Hosting
 
