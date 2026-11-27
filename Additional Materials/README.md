@@ -11,3 +11,8 @@ Since the display is not a table, but a grid, Edit and Delete buttons had to als
 The editor for each atlas card is a lot like a [Lesson Form](https://github.com/Pandora1337/mt-lms/wiki/2.-Teaching#lesson-form), but with an additional field for image url/path and a preview thumbnail to confirm the chosen image.
 
 The Google Drive button automatically converts shared URL to a thumbnail URL for proper loading.
+
+# On Mobile
+
+![Atlas Form](https://github.com/Pandora1337/mt-lms/blob/main/Additional%20Materials/assets/atlas-form-mobile.png)
+![Atlas](https://github.com/Pandora1337/mt-lms/blob/main/Additional%20Materials/assets/atlas-mobile.png)

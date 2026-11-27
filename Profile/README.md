@@ -3,6 +3,11 @@
 
 In the user's profile section (accessible from anywhere by clicking on the username on the top right of the header) the user can change their name, change their password, add a 2 factor authenticator, and log out.
 
+## On Mobile
+![Profile on Mobile](https://github.com/Pandora1337/mt-lms/blob/main/Profile/assets/profile-mobile.png)
+
+Naturally this layout transfers well to mobile screens, columns are now stacked on top of each other 
+
 # 2FA
 
 ![2FA](https://github.com/Pandora1337/mt-lms/blob/main/Profile/assets/profile-2fa.png)

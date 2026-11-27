@@ -33,6 +33,13 @@ This page is Statically Rendered, however the Lesson Form is not.
 
 Same authorization logic applies here as in Course View.
 
+## On Mobile
+![Lesson View on Mobile](https://github.com/Pandora1337/mt-lms/blob/main/Courses/assets/courses-mobile.png)
+
+Showing tables on mobile is always a challenge, but I tried addressing it with title and badge management. I separated Title wrapping from badge display so that on mobile (or on PC with long course titles) badges will never be wrapped to a new line under the title.
+
+This helps immensely with readability, since visually users dont need to decode to which course a badge belongs to.
+
 # Lesson Form
 
 ![Lesson Form](https://github.com/Pandora1337/mt-lms/blob/main/Courses/assets/course-lesson-form.png)
