@@ -3,7 +3,7 @@
 
 Courses page shows all available courses for the user (Note the `Admin` and `Manager` badges, these courses are only available to those roles)
 
-Each Course Model only contains data for its Id, Title, RequiredRole, and DisplayOrder (+ Navigation property linking to a list of lessons). The data for hints are derived from the lessons in each course JOINED to the course query.
+Each Course Model only contains data for its `Id`, `Title`, `RequiredRole`, and `DisplayOrder` (+ Navigation property linking to a list of lessons). The data for hints are derived from the lessons in each course JOINED to the course query.
 
 Legend (From left to right):
 - The blue dot symbolizes a Seen Course (Course where all lessons have been opened by the user)
@@ -38,7 +38,7 @@ Same authorization logic applies here as in Course View.
 
 Showing tables on mobile is always a challenge, but I tried addressing it with title and badge management. I separated Title wrapping from badge display so that on mobile (or on PC with long course titles) badges will never be wrapped to a new line under the title.
 
-This helps immensely with readability, since visually users dont need to decode to which course a badge belongs to.
+This helps immensely with readability, since visually users don't need to decode to which course a badge belongs to.
 
 # Lesson Form
 

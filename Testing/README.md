@@ -41,17 +41,12 @@ If I had to revisit this section, there are a few UX improvements I would add:
 - A field to adjust `Time per question` that gets added or removed for each question.
 - Lock `Test Duration` if it was manually edited.
 
-Otherwise, I think this page in particular is quite successfull.
+Otherwise, I think this page in particular is quite successful.
 
 # Mobile UI
 
 And of course I went to great lengths to make this UI also work on smaller screens! I think the results speak for themselves.
 
-## Test Form
-![Test Form](https://github.com/Pandora1337/mt-lms/blob/main/Testing/assets/test-form-mobile.png)
-
-## Test
 ![Test View](https://github.com/Pandora1337/mt-lms/blob/main/Testing/assets/test-mobile.png)
-
-## Test Finished
 ![Test Finished](https://github.com/Pandora1337/mt-lms/blob/main/Testing/assets/test-finished-mobile.png)
+![Test Form](https://github.com/Pandora1337/mt-lms/blob/main/Testing/assets/test-form-mobile.png)
