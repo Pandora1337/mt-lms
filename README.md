@@ -14,16 +14,20 @@ This is a showcase of a Learning Management System (LMS) I build on Blazor Serve
 * **Timeline:** September - November 2026 (6 Weeks)
 * **Status:** Complete
 
-## [Explore the website!](https://github.com/Pandora1337/mt-lms/wiki/1.-Login)
+<p align="center">
+  <a href="https://github.com/Pandora1337/mt-lms/wiki">
+    Check it out!
+  </a>
+</p>
 
 **Note**:
 - The source code for this project is proprietary and confidential. This repository serves as a portfolio case study highlighting the architecture, design, and feature set.
 
-- The website is machine translated to english, as it was built for a non-english speaking company.
+- The website is machine translated to English, as it was built for a non-English speaking company.
 
-**Table of Contents**:
+### Table of Contents:
 <ol>
-  <li><a href="https://github.com/Pandora1337/mt-lms/wiki/1.-Login">Explore the Website!</a></li>
+  <li><a href="https://github.com/Pandora1337/mt-lms/wiki">Explore the Website!</a></li>
   <li><a href="#features">Features</a></li>
   <li><a href="#tools-and-stack">Tools & Stack</a></li>
   <li>
@@ -39,9 +43,7 @@ This is a showcase of a Learning Management System (LMS) I build on Blazor Serve
   <li><a href="#deployment">Deployment</a></li>
 </ol>
 
----
-
-### Features
+## Features
 - **Role-Based Access Control (RBAC)** - Using `ASP.NET Core Identity` with custom user profiles
 - **User Roles**:
   - **User** - Has access to view Courses, Tests, and Additional Materials
@@ -53,9 +55,7 @@ This is a showcase of a Learning Management System (LMS) I build on Blazor Serve
 - **Course Sorting** - Find the most important, most recent, or any unseen courses!
 - **Mobile friendly** - All UI adapts dynamically to a phone or tablet screen
 
----
-
-### Tools and Stack
+## Tools and Stack
 
 | Category | Tool / Platform |
 | :--- | :--- |
@@ -67,8 +67,6 @@ This is a showcase of a Learning Management System (LMS) I build on Blazor Serve
 | **Deployment** | Docker
 | **Reverse Proxy** | Caddy
 | **Stress Testing** | Grafana's k6
-
----
 
 ## Architecture
 ### Design Requirements:
@@ -127,7 +125,7 @@ State is managed in 2 distinct scopes:
 
 Extensive documentation was written for each service, architectural decisions during implementation, and how they interact with each other.
 
-I also wrote separate guidebooks with step-by-step explanations and commands for seting up a new host, deploying the application stack, migration procedure, and database backup/restoration procedure
+I also wrote separate guidebooks with step-by-step explanations and commands for setting up a new host, deploying the application stack, migration procedure, and database backup/restoration procedure
 
 ## Hosting
 
@@ -135,7 +133,7 @@ I also wrote separate guidebooks with step-by-step explanations and commands for
 Since the website is for internal use in a small company targeting ~200 users, I decided that a VPS hosting both the website and database provides best cost-efficiency and ease of management.
 
 **Environment**
-Being environment agnostic was an important consideration: to have the flexibility to migrate elsewhere if required. For that reason Docker was chosen to orchestrate blazor server, database, and reverse-proxy using a docker-compose file.
+Being environment agnostic was an important consideration: to have the flexibility to migrate elsewhere if required. For that reason Docker was chosen to orchestrate Blazor server, database, and reverse-proxy using a docker-compose file.
 
 This makes app install portable and easily setup with a single command, provided the host is properly configured.
 
