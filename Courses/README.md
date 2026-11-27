@@ -28,14 +28,20 @@ Authorization is handled by the back-end checking if the parent Course has a mat
 # Lesson View
 ![Lesson View](https://github.com/Pandora1337/mt-lms/blob/main/Courses/assets/course-lesson.png)
 
-Each lesson is mostly a Markdown formatted string, rendered to HTML by Markdig NuGet Package on the server.
+Each lesson is mostly a Markdown formatted string, rendered to HTML by Markdig NuGet Package on the server. This allows rich text formatting, including embedding images and video links!
 This page is Statically Rendered, however the Lesson Form is not.
 
 Same authorization logic applies here as in Course View.
 
 # Lesson Form
 
+![Lesson Form](https://github.com/Pandora1337/mt-lms/blob/main/Courses/assets/course-lesson-form.png)
+
+![Lesson Form Preview](https://github.com/Pandora1337/mt-lms/blob/main/Courses/assets/course-lesson-form-preview.png)
+
 This is the first appearance of the custom `MarkdownEditor.razor` component, and also the first Interactively Rendered page. The active connection allows to pass the Markdown text back to server for preview rendering in real-time. Otherwise, the form is fairly standard.
+
+The second such editor is in [Additional Materials Form](https://github.com/Pandora1337/mt-lms/wiki/4.-Additional-Materials#atlas-form).
 
 The routing passes the ID of the Lesson and its parent Course:
 ```
@@ -46,8 +52,4 @@ The routing passes the ID of the Lesson and its parent Course:
 If the page is `/new/`, then `LessonId == 0`, which then dictates whether to fetch the Lesson from DB or create a new one.
 
 This page is also locked behind `[Authorize(Roles = "Admin")]` attribute, preventing non-admins from editing or creating Lessons.
-
-![Lesson Form](https://github.com/Pandora1337/mt-lms/blob/main/Courses/assets/course-lesson-form.png)
-
-![Lesson Form Preview](https://github.com/Pandora1337/mt-lms/blob/main/Courses/assets/course-lesson-form-preview.png)
 
