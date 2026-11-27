@@ -8,7 +8,9 @@
 </div>
 
 # MT-LMS
-This is a showcase of a Learning Management System (LMS) I build on Blazor Server for internal use of a small company.
+This is a showcase of a Learning Management System (LMS) I build on Blazor Server for internal use of a small company. 
+This README contains technical analysis of the project in general, and it's deployment strategy.
+The wiki (link below) contains per-page design and implementation analysis with screenshots of the UI.
 
 * **Role:** Fullstack Developer
 * **Timeline:** September - November 2026 (6 Weeks)
